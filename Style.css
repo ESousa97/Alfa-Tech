@@ -1,0 +1,123 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #e0f7fa, #ffffff);
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: #00796b;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #004d40;
+    border-bottom: 2px solid #004d40;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #00695c;
+    margin-top: 20px;
+}
+
+/* Paragraph Styles */
+p {
+    margin: 10px 0;
+}
+
+/* List Styles */
+ul, ol {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+ul li, ol li {
+    margin-bottom: 10px;
+}
+
+/* Bold Text */
+b {
+    color: #00796b;
+}
+
+/* Image Styles */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 15px auto;
+    border-radius: 5px;
+}
+
+/* Specific Image Alignment */
+.image-left {
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    max-width: 40%;
+}
+
+.image-right {
+    float: right;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    max-width: 40%;
+}
+
+/* Clear Floats */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Styling for Sections */
+h2, h3 {
+    margin-top: 30px;
+}
+
+/* Styling for Blockquote */
+blockquote {
+    background-color: #f1f8e9;
+    border-left: 5px solid #8bc34a;
+    padding: 10px 20px;
+    margin: 20px 0;
+    font-style: italic;
+    color: #33691e;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 40px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
