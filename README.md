@@ -54,5 +54,5 @@ Este projeto é de código aberto e pode ser modificado ou compartilhado livreme
 
 ## Projeto
 <p align="center">
-  <img src="https://via.placeholder.com/800x400" alt="Imagem do Projeto Alfa Tech">
+  <img src="./Assets/media/Alfa_Tech.png" alt="Imagem do Projeto Alfa Tech">
 </p>
