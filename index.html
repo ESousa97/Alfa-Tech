@@ -4,7 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Alfa Tech - Desvende os Segredos da Tecnologia</title>
-
   <link rel="icon" href="Assets/favicon/favicon.ico" type="image/x-icon" />
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
@@ -128,8 +127,7 @@
     }
 
     @keyframes pulse {
-      0%,
-      100% {
+      0%, 100% {
         opacity: 1;
         transform: scale(1);
       }
@@ -245,7 +243,7 @@
       margin: 30px 0;
     }
 
-    /* Cartões de componente */
+    /* Cartões de componente com imagens 3D */
     .component-card {
       background: rgba(50, 50, 50, 0.8);
       backdrop-filter: blur(15px);
@@ -288,18 +286,20 @@
       margin-bottom: 15px;
     }
 
-    .component-icon {
-      width: 50px;
-      height: 50px;
-      background: linear-gradient(135deg, var(--discord-blurple), var(--discord-green));
-      border-radius: 10px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    /* Imagem 3D para componentes */
+    .component-image {
+      width: 80px;
+      height: 80px;
       margin-right: 15px;
-      font-size: 1.5rem;
-      box-shadow: 0 0 20px rgba(88, 101, 242, 0.3);
+      border-radius: 10px;
+      object-fit: cover;
+      box-shadow: 0 10px 20px rgba(88, 101, 242, 0.3);
+      transition: transform 0.3s ease;
       user-select: none;
+    }
+
+    .component-card:hover .component-image {
+      transform: scale(1.1) rotateY(10deg);
     }
 
     .component-title {
@@ -308,6 +308,43 @@
       color: var(--discord-green);
       text-shadow: 0 0 10px rgba(87, 242, 135, 0.3);
       user-select: none;
+    }
+
+    /* Seção de sistemas operacionais com imagens 3D */
+    .os-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin: 30px 0;
+    }
+
+    .os-card {
+      background: rgba(50, 50, 50, 0.8);
+      backdrop-filter: blur(15px);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .os-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 30px rgba(88, 101, 242, 0.2);
+    }
+
+    .os-image {
+      width: 100px;
+      height: 100px;
+      margin: 0 auto 15px;
+      border-radius: 10px;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    .os-card:hover .os-image {
+      transform: scale(1.1) rotateY(15deg);
     }
 
     /* Prova social */
@@ -465,9 +502,23 @@
         gap: 15px;
       }
 
+      .os-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
       .social-proof .stats {
         flex-direction: column;
         gap: 15px;
+      }
+
+      .component-image {
+        width: 60px;
+        height: 60px;
+      }
+
+      .os-image {
+        width: 80px;
+        height: 80px;
       }
     }
 
@@ -554,7 +605,7 @@
     <div class="component-grid">
       <article class="component-card" tabindex="0" aria-label="Hardware">
         <div class="component-header">
-          <div class="component-icon" aria-hidden="true">🔧</div>
+          <img src="hardware.png" alt="Hardware 3D" class="component-image">
           <div class="component-title">Hardware</div>
         </div>
         <p><strong>O Guerreiro Físico:</strong> Imagine o hardware como um super-herói que você pode tocar - músculos de aço, força bruta, mas precisa de ordens para agir.</p>
@@ -564,7 +615,7 @@
       </article>
       <article class="component-card" tabindex="0" aria-label="Software">
         <div class="component-header">
-          <div class="component-icon" aria-hidden="true">💭</div>
+          <img src="software.png" alt="Software 3D" class="component-image">
           <div class="component-title">Software</div>
         </div>
         <p><strong>O Mestre Mental:</strong> O software é como um mago invisível que sussurra comandos mágicos para o hardware realizar feitos impossíveis.</p>
@@ -583,7 +634,7 @@
     <div class="component-grid">
       <article class="component-card" tabindex="0" aria-label="CPU - O Cérebro">
         <div class="component-header">
-          <div class="component-icon" aria-hidden="true">🧠</div>
+          <img src="cpu.png" alt="CPU 3D" class="component-image">
           <div class="component-title">CPU - O Cérebro</div>
         </div>
         <p><strong>O Einstein Digital:</strong> Processa 3 bilhões de operações por segundo! É como ter um gênio que nunca se cansa trabalhando para você.</p>
@@ -593,7 +644,7 @@
       </article>
       <article class="component-card" tabindex="0" aria-label="RAM - A Mesa Mágica">
         <div class="component-header">
-          <div class="component-icon" aria-hidden="true">⚡</div>
+          <img src="memoria_ram.png" alt="Memória RAM 3D" class="component-image">
           <div class="component-title">RAM - A Mesa Mágica</div>
         </div>
         <p><strong>Workspace Infinito:</strong> Imagine uma mesa que cresce conforme você precisa de mais espaço para trabalhar. Mais RAM = mais produtividade!</p>
@@ -603,7 +654,7 @@
       </article>
       <article class="component-card" tabindex="0" aria-label="SSD - O Cofre do Futuro">
         <div class="component-header">
-          <div class="component-icon" aria-hidden="true">💾</div>
+          <img src="ssd.png" alt="SSD 3D" class="component-image">
           <div class="component-title">SSD - O Cofre do Futuro</div>
         </div>
         <p><strong>Biblioteca Instantânea:</strong> SSD vs HD é como comparar um atleta olímpico com uma tartaruga. Sem brincadeira!</p>
@@ -613,12 +664,73 @@
       </article>
       <article class="component-card" tabindex="0" aria-label="Placa Mãe - A Rede Neural">
         <div class="component-header">
-          <div class="component-icon" aria-hidden="true">🕸️</div>
+          <img src="placa_mae.png" alt="Placa Mãe 3D" class="component-image">
           <div class="component-title">Placa Mãe - A Rede Neural</div>
         </div>
         <p><strong>Central de Comando:</strong> É como o sistema nervoso do computador - conecta tudo e faz a mágica acontecer!</p>
         <p style="color: var(--discord-blurple); font-weight: 600; margin-top: 10px;">
           🌐 O coração que une todos os órgãos!
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="card" aria-label="Sistemas operacionais">
+    <div class="section-header" role="heading" aria-level="2">
+      <div class="section-icon" aria-hidden="true">💻</div>
+      <h2>Sistemas Operacionais: O Maestro da Orquestra</h2>
+    </div>
+    <p style="font-size: 1.1rem; color: var(--win11-text-secondary); margin-bottom: 20px;">
+      Como diferentes "personalidades" controlam seu computador de formas únicas!
+    </p>
+    <div class="os-grid">
+      <article class="os-card" tabindex="0" aria-label="Windows">
+        <img src="Windows.png" alt="Windows 3D" class="os-image">
+        <h3 style="color: var(--discord-blurple); margin-bottom: 10px;">Windows</h3>
+        <p>O popular e versátil - como um canivete suíço digital!</p>
+      </article>
+      <article class="os-card" tabindex="0" aria-label="macOS">
+        <img src="MacOS.png" alt="macOS 3D" class="os-image">
+        <h3 style="color: var(--discord-green); margin-bottom: 10px;">macOS</h3>
+        <p>O elegante e intuitivo - design que encanta!</p>
+      </article>
+      <article class="os-card" tabindex="0" aria-label="Linux">
+        <img src="Linux.png" alt="Linux 3D" class="os-image">
+        <h3 style="color: var(--discord-yellow); margin-bottom: 10px;">Linux</h3>
+        <p>O personalizável e poderoso - liberdade total!</p>
+      </article>
+      <article class="os-card" tabindex="0" aria-label="Snapdragon">
+        <img src="Snapdragon.png" alt="Snapdragon 3D" class="os-image">
+        <h3 style="color: var(--discord-fuchsia); margin-bottom: 10px;">Snapdragon</h3>
+        <p>O processador mobile que revoluciona!</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="card" aria-label="Armazenamento digital">
+    <div class="section-header" role="heading" aria-level="2">
+      <div class="section-icon" aria-hidden="true">💾</div>
+      <h2>A Evolução do Armazenamento Digital</h2>
+    </div>
+    <div class="component-grid">
+      <article class="component-card" tabindex="0" aria-label="HD Tradicional">
+        <div class="component-header">
+          <img src="hard_disc.png" alt="Hard Disc 3D" class="component-image">
+          <div class="component-title">HD Tradicional</div>
+        </div>
+        <p><strong>O Veterano Confiável:</strong> Como uma biblioteca gigante com índices físicos - funciona, mas demora para encontrar as coisas!</p>
+        <p style="color: var(--discord-yellow); margin-top: 10px;">
+          📚 <strong>Capacidade:</strong> Muito espaço por pouco dinheiro!
+        </p>
+      </article>
+      <article class="component-card" tabindex="0" aria-label="SSD Moderno">
+        <div class="component-header">
+          <img src="ssd.png" alt="SSD 3D" class="component-image">
+          <div class="component-title">SSD Moderno</div>
+        </div>
+        <p><strong>O Velocista Digital:</strong> Como ter um assistente pessoal que encontra tudo instantaneamente - o futuro chegou!</p>
+        <p style="color: var(--discord-green); font-weight: 600; margin-top: 10px;">
+          ⚡ <strong>Velocidade:</strong> 10x mais rápido que HDs!
         </p>
       </article>
     </div>
@@ -665,7 +777,7 @@
     </div>
   </section>
 
-  <section class="card" aria-label="Fatos interessantes">
+  <section class="card" aria-label="Curiosidades tecnológicas">
     <div class="section-header" role="heading" aria-level="2">
       <div class="section-icon" aria-hidden="true">🎊</div>
       <h2>Fatos Que Vão Explodir Sua Mente</h2>
@@ -686,9 +798,14 @@
             padding: 15px;
             background: rgba(255, 255, 255, 0.05);
             border-radius: 8px;
+            display: flex;
+            align-items: center;
           "
         >
-          <strong>🏢 ENIAC (1946):</strong> Pesava 27 toneladas e ocupava uma sala inteira! Seu smartphone tem 100.000x mais poder!
+          <img src="Eniac.png" alt="ENIAC 3D" style="width: 60px; height: 60px; margin-right: 15px; border-radius: 8px;">
+          <div>
+            <strong>🏢 ENIAC (1946):</strong> Pesava 27 toneladas e ocupava uma sala inteira! Seu smartphone tem 100.000x mais poder!
+          </div>
         </li>
         <li
           style="
@@ -732,7 +849,7 @@
     </a>
   </section>
 
-    <footer>
+  <footer>
     <p style="font-size: 1.1rem; margin-bottom: 10px;">
         Criado com 💜 por <strong style="color: var(--discord-blurple);">José Enoque</strong>
     </p>
@@ -753,7 +870,7 @@
         </svg>
         </a>
     </nav>
-    </footer>
+  </footer>
 
   <script>
     // Atualiza a barra de progresso conforme o scroll
@@ -796,7 +913,7 @@
     }, observerOptions);
 
     // Observa cards e componentes
-    document.querySelectorAll('.card, .component-card').forEach(card => {
+    document.querySelectorAll('.card, .component-card, .os-card').forEach(card => {
       card.style.opacity = '0';
       card.style.transform = 'translateY(30px)';
       observer.observe(card);
@@ -815,7 +932,7 @@
     document.head.appendChild(styleSheet);
 
     // Interatividade dos componentes (exemplo simples de click com efeito)
-    document.querySelectorAll('.component-card').forEach(card => {
+    document.querySelectorAll('.component-card, .os-card').forEach(card => {
       card.addEventListener('click', () => {
         card.style.transition = 'transform 0.2s ease';
         card.style.transform = 'scale(1.05)';
@@ -840,6 +957,34 @@
         interactiveDemo.style.background = 'rgba(87, 242, 135, 0.2)';
         interactiveDemo.setAttribute('aria-pressed', 'true');
         alert('Modo aprendizado interativo ativado! Aproveite a experiência.');
+      });
+    }
+
+    // Efeito parallax suave nas imagens
+    window.addEventListener('scroll', () => {
+      const scrolled = window.pageYOffset;
+      const rate = scrolled * -0.5;
+      
+      document.querySelectorAll('.component-image, .os-image').forEach(img => {
+        img.style.transform = `translateY(${rate * 0.1}px)`;
+      });
+    });
+
+    // Lazy loading para imagens
+    if ('IntersectionObserver' in window) {
+      const imageObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const img = entry.target;
+            img.src = img.src; // Força o carregamento
+            img.classList.remove('lazy');
+            imageObserver.unobserve(img);
+          }
+        });
+      });
+
+      document.querySelectorAll('img[src]').forEach(img => {
+        imageObserver.observe(img);
       });
     }
   </script>
