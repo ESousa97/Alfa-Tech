@@ -56,7 +56,7 @@ O objetivo de longo prazo é não apenas educar, mas também inspirar curiosidad
 ## 🎬 Demonstração Visual
 
 <p align="center">
-  <img src="alfatech.gif" alt="Demonstração da Plataforma Alfa Tech em Funcionamento" width="800">
+  <img src="./Assets/alfatech.gif" alt="Demonstração da Plataforma Alfa Tech em Funcionamento" width="800">
 </p>
 
 ## Arquitetura do Sistema
@@ -324,3 +324,4 @@ Para detalhes completos, consulte o arquivo [LICENSE](https://github.com/ESousa9
 
 
 > ✨ **Criado em:** 14 de nov. de 2024 às 00:08
+
