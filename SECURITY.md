@@ -1,6 +1,7 @@
 # Política de Segurança
 
 ## Reportando Vulnerabilidades
+
 Se você encontrar uma vulnerabilidade, por favor reporte de forma responsável.
 
 - **Canal:** abra uma issue marcada como "security" ou contate via LinkedIn no README.

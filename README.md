@@ -89,6 +89,7 @@ graph TD
 ```
 
 **Explicação do Fluxo:**
+
 1. **Usuário** acessa a aplicação através do navegador
 2. **Edge Network da Vercel** intercepta e roteia a requisição
 3. **Servidor de Ativos Estáticos** entrega o `index.html` principal
@@ -135,13 +136,13 @@ graph TD
 
 ## 🛠️ Tech Stack Detalhado
 
-| Categoria | Tecnologia | Versão | Propósito no Projeto | Justificativa da Escolha |
-| :--- | :--- | :--- | :--- | :--- |
-| **Frontend** | **HTML5** | N/A | Estruturação semântica do conteúdo educacional | Padrão universal para web, essencial para acessibilidade e SEO |
-| **Estilização** | **CSS3** | N/A | Design minimalista, tipografia fluida e responsividade | Poder nativo para criar interfaces educacionais modernas sem dependências |
-| **Deployment** | **Vercel** | N/A | Hospedagem, CI/CD e distribuição global via CDN | Integração perfeita com GitHub, deployments automáticos e performance otimizada |
-| **Controle de Versão** | **Git & GitHub** | N/A | Gerenciamento de código-fonte e versionamento | Padrão da indústria para desenvolvimento colaborativo e controle de mudanças |
-| **Assets** | **Imagens/Ícones** | N/A | Recursos visuais para reforço educacional | Suporte visual essencial para compreensão de conceitos abstratos |
+| Categoria              | Tecnologia         | Versão | Propósito no Projeto                                   | Justificativa da Escolha                                                        |
+| :--------------------- | :----------------- | :----- | :----------------------------------------------------- | :------------------------------------------------------------------------------ |
+| **Frontend**           | **HTML5**          | N/A    | Estruturação semântica do conteúdo educacional         | Padrão universal para web, essencial para acessibilidade e SEO                  |
+| **Estilização**        | **CSS3**           | N/A    | Design minimalista, tipografia fluida e responsividade | Poder nativo para criar interfaces educacionais modernas sem dependências       |
+| **Deployment**         | **Vercel**         | N/A    | Hospedagem, CI/CD e distribuição global via CDN        | Integração perfeita com GitHub, deployments automáticos e performance otimizada |
+| **Controle de Versão** | **Git & GitHub**   | N/A    | Gerenciamento de código-fonte e versionamento          | Padrão da indústria para desenvolvimento colaborativo e controle de mudanças    |
+| **Assets**             | **Imagens/Ícones** | N/A    | Recursos visuais para reforço educacional              | Suporte visual essencial para compreensão de conceitos abstratos                |
 
 ## 📂 Estrutura Detalhada do Código-Fonte
 
@@ -177,9 +178,11 @@ Alfa-Tech-main/
 ## 📋 Pré-requisitos Avançados
 
 **Para Usuários:**
+
 - **Navegador Web Moderno:** Chrome, Firefox, Safari, Edge (suporte a HTML5 e CSS3)
 
 **Para Desenvolvimento (opcional):**
+
 - **Git:** Sistema de controle de versão para clonar repositório
 - **Editor de Código:** VS Code, Sublime Text ou IDE similar
 - **Node.js 18+ (opcional):** Para rodar lint/format/testes locais
@@ -192,12 +195,14 @@ Nenhuma dependência de runtime ou processo de compilação é necessário para 
 A plataforma educacional foi projetada para execução direta sem dependências ou compilação.
 
 1. **Clonar o Repositório:**
+
 ```bash
 git clone https://github.com/ESousa97/Alfa-Tech.git
 cd Alfa-Tech-main
 ```
 
 2. **Execução Local Simples:**
+
 ```bash
 # macOS
 open index.html
@@ -210,8 +215,9 @@ start index.html
 ```
 
 3. **Servidor Local (Recomendado):**
-Para melhor experiência de desenvolvimento:
+   Para melhor experiência de desenvolvimento:
 4. **Lint e Testes (Opcional):**
+
 ```bash
 npm install
 npm run lint
@@ -258,7 +264,7 @@ Adicione novas seções educacionais seguindo a estrutura:
 ```html
 <section class="concept-card">
   <div class="icon-container">
-    <img src="Assets/Image/novo-conceito.png" alt="Novo Conceito">
+    <img src="Assets/Image/novo-conceito.png" alt="Novo Conceito" />
   </div>
   <h3>Título do Conceito</h3>
   <p>Explicação clara e acessível do conceito...</p>
@@ -268,6 +274,7 @@ Adicione novas seções educacionais seguindo a estrutura:
 ## 🧪 Estratégia de Testes e Qualidade de Código
 
 **Qualidade Atual:**
+
 - Validação manual cross-browser para experiência educacional consistente
 - Testes de responsividade em múltiplos dispositivos
 - Teste de smoke automatizado para presença de seções essenciais
@@ -276,10 +283,12 @@ Adicione novas seções educacionais seguindo a estrutura:
 **Estratégia de Qualidade Proposta:**
 
 **Testes Educacionais:**
+
 - **Lighthouse:** Auditoria de performance, acessibilidade e SEO educacional
 - **WAVE:** Análise de acessibilidade para conteúdo educacional inclusivo
 
 **Validação de Conteúdo:**
+
 - **W3C Validator:** Verificação de HTML/CSS seguindo padrões web
 - **Teste de Usabilidade:** Validação da clareza do conteúdo educacional
 
@@ -288,11 +297,13 @@ Adicione novas seções educacionais seguindo a estrutura:
 **Plataforma:** Implantado na **Vercel** com otimização para conteúdo educacional estático.
 
 **Processo de CI/CD:**
+
 - GitHub Actions para lint, format e testes de smoke
 - CodeQL para análises de segurança
 - Deploy automatizado via integração GitHub (Vercel)
 
 **Escalabilidade Educacional:**
+
 - **Distribuição Global:** CDN da Vercel garante acesso rápido mundialmente
 - **Cache Inteligente:** Recursos educacionais cacheados em edge locations
 - **Performance Otimizada:** Carregamento rápido essencial para retenção educacional
@@ -340,6 +351,4 @@ Para detalhes completos, consulte o arquivo [LICENSE](https://github.com/ESousa9
   <em>Desenvolvido com ❤️ por José Enoque - Democratizando o conhecimento tecnológico através de design e educação</em>
 </p>
 
-
 > ✨ **Criado em:** 14 de nov. de 2024 às 00:08
-
