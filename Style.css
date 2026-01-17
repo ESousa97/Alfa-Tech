@@ -262,6 +262,11 @@ footer {
   text-align: center;
 }
 
+.cycle-icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
 .facts {
   background: #fff9fb;
   border: 1px solid var(--border);
@@ -366,6 +371,10 @@ footer {
   color: var(--accent);
   background: #fff;
   box-shadow: 0 8px 16px rgb(15 23 42 / 8%);
+}
+
+.social-icon svg {
+  display: block;
 }
 
 .social-icon:hover,
