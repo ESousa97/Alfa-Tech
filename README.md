@@ -16,16 +16,20 @@ O projeto Alfa Tech aborda a crescente necessidade de literacia digital, oferece
 
 Como solução, este projeto materializa-se como uma aplicação web estática de página única (Single-Page Application) que emprega uma abordagem narrativa e visual para desmistificar a tecnologia. A metodologia central baseia-se em uma arquitetura puramente frontend, utilizando HTML5 para a estrutura semântica e CSS3 avançado para a apresentação.
 
-A inovação do projeto não reside na criação de uma nova tecnologia, mas na aplicação de princípios de design moderno—como glassmorphism (`backdrop-filter`), animações complexas (`@keyframes`) e design responsivo (`clamp()`)—a um domínio educacional. O resultado é um website acessível, visualmente impactante e informativo, que serve como um ponto de entrada convidativo ao mundo da tecnologia, transformando um tópico potencialmente intimidador em uma experiência de aprendizado atraente e eficaz.
+A inovação do projeto não reside na criação de uma nova tecnologia, mas na aplicação de princípios de design moderno — tipografia fluida (`clamp()`), hierarquia visual consistente e layout minimalista — a um domínio educacional. O resultado é um website acessível, limpo e informativo, que serve como um ponto de entrada convidativo ao mundo da tecnologia, transformando um tópico potencialmente intimidador em uma experiência de aprendizado atraente e eficaz.
 
 ## Badges Abrangentes
 
-![Licença](https://img.shields.io/github/license/ESousa97/Alfa-Tech?style=for-the-badge&logo=github&label=Licen%C3%A7a)
-![Linguagem Principal](https://img.shields.io/github/languages/top/ESousa97/Alfa-Tech?style=for-the-badge&logo=html5&logoColor=orange)
-![Tamanho do Repositório](https://img.shields.io/github/repo-size/ESousa97/Alfa-Tech?style=for-the-badge&logo=github)
-![Último Commit](https://img.shields.io/github/last-commit/ESousa97/Alfa-Tech?style=for-the-badge&logo=git&logoColor=white)
-![Issues Abertas](https://img.shields.io/github/issues/ESousa97/Alfa-Tech?style=for-the-badge&logo=github)
-![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
+![CI](https://github.com/ESousa97/Alfa-Tech/actions/workflows/ci.yml/badge.svg)
+![CodeQL](https://github.com/ESousa97/Alfa-Tech/actions/workflows/codeql.yml/badge.svg)
+![Coverage](https://codecov.io/gh/ESousa97/Alfa-Tech/branch/main/graph/badge.svg)
+![Code Quality](https://www.codefactor.io/repository/github/ESousa97/Alfa-Tech/badge)
+![Licença](https://img.shields.io/github/license/ESousa97/Alfa-Tech?logo=github&label=Licen%C3%A7a)
+![Linguagem Principal](https://img.shields.io/github/languages/top/ESousa97/Alfa-Tech?logo=html5&logoColor=orange)
+![Tamanho do Repositório](https://img.shields.io/github/repo-size/ESousa97/Alfa-Tech?logo=github)
+![Último Commit](https://img.shields.io/github/last-commit/ESousa97/Alfa-Tech?logo=git)
+![Issues Abertas](https://img.shields.io/github/issues/ESousa97/Alfa-Tech?logo=github)
+![Vercel](https://img.shields.io/badge/Vercel-000000?logo=vercel&logoColor=white)
 
 ## Sumário (Table of Contents)
 
@@ -95,9 +99,9 @@ graph TD
 
 1. **Stack "Vanilla" (HTML/CSS Puros):** Decisão estratégica de não utilizar frameworks JavaScript para manter o código enxuto, desempenho otimizado e foco total na qualidade da apresentação educacional.
 
-2. **CSS-in-HTML para Estilos Críticos:** Estilos principais embutidos no `index.html` para eliminar requisições HTTP adicionais, melhorando velocidade de carregamento e garantindo experiência visual consistente.
+2. **CSS Modular e Minimalista:** Estilos centralizados em `Style.css`, reduzindo complexidade e facilitando manutenção.
 
-3. **Design Visualmente Rico com CSS Moderno:** Uso intensivo de gradientes, animações, `backdrop-filter` (glassmorphism) e `clamp()` para tipografia fluida, combatendo o estereótipo de conteúdo educacional visualmente desinteressante.
+3. **Design Limpo e Moderno:** Tipografia fluida com `clamp()` e uso moderado de sombras e gradientes para foco na leitura.
 
 4. **Semântica e Responsividade:** Estrutura com tags semânticas (`<section>`, `<header>`, `<footer>`) para acessibilidade e SEO, com design "mobile-first" através de media queries bem definidas.
 
@@ -107,29 +111,23 @@ graph TD
 
 ### 1. Hero Section Imersiva
 
-**Propósito:** Introdução visualmente impactante com título animado e subtítulo pulsante que estabelece o tom moderno e profissional da plataforma.
+**Propósito:** Introdução visualmente impactante com título claro e subtítulo objetivo que estabelece o tom moderno e profissional da plataforma.
 
 **Caso de Uso:** Novo visitante acessa o site e é imediatamente cativado por cabeçalho dinâmico, incentivando-o a explorar o conteúdo educacional completo.
 
-### 2. Cards de Glassmorphism Interativos
+### 2. Cards Minimalistas
 
-**Propósito:** Conteúdo segmentado em seções lógicas contidas em "cards" com efeito de vidro fosco que reagem ao hover, melhorando a interatividade.
+**Propósito:** Conteúdo segmentado em seções lógicas contidas em "cards" com bordas suaves e contraste sutil para facilitar a leitura.
 
 **Caso de Uso:** Estudante querendo entender diferença entre hardware e software pode focar diretamente no card correspondente, isolando visualmente a informação para melhor concentração.
 
-### 3. Barra de Progresso de Leitura
-
-**Propósito:** Indicador visual no topo da página que avança conforme o usuário rola, mostrando progresso na leitura do conteúdo.
-
-**Caso de Uso:** Usuário tem feedback visual de quanto conteúdo consumiu e quanto falta, motivando-o a continuar até completar a jornada educacional.
-
-### 4. Aprendizagem Reforçada por Ícones
+### 3. Aprendizagem Reforçada por Ícones
 
 **Propósito:** Conceitos-chave como CPU, RAM e Armazenamento acompanhados por ícones e imagens representativas para reforço visual.
 
 **Caso de Uso:** Ao ler sobre "CPU, o cérebro do computador", usuário vê imagem de processador ao lado do texto, criando associação visual que reforça memorização.
 
-### 5. Design Responsivo Educacional
+### 4. Design Responsivo Educacional
 
 **Propósito:** Layout que se adapta fluidamente a diferentes dispositivos, mantendo qualidade educacional em smartphones, tablets e desktops.
 
@@ -140,7 +138,7 @@ graph TD
 | Categoria | Tecnologia | Versão | Propósito no Projeto | Justificativa da Escolha |
 | :--- | :--- | :--- | :--- | :--- |
 | **Frontend** | **HTML5** | N/A | Estruturação semântica do conteúdo educacional | Padrão universal para web, essencial para acessibilidade e SEO |
-| **Estilização** | **CSS3** | N/A | Design avançado, animações, glassmorphism e responsividade | Poder nativo para criar interfaces educacionais modernas sem dependências |
+| **Estilização** | **CSS3** | N/A | Design minimalista, tipografia fluida e responsividade | Poder nativo para criar interfaces educacionais modernas sem dependências |
 | **Deployment** | **Vercel** | N/A | Hospedagem, CI/CD e distribuição global via CDN | Integração perfeita com GitHub, deployments automáticos e performance otimizada |
 | **Controle de Versão** | **Git & GitHub** | N/A | Gerenciamento de código-fonte e versionamento | Padrão da indústria para desenvolvimento colaborativo e controle de mudanças |
 | **Assets** | **Imagens/Ícones** | N/A | Recursos visuais para reforço educacional | Suporte visual essencial para compreensão de conceitos abstratos |
@@ -149,31 +147,42 @@ graph TD
 
 ```
 Alfa-Tech-main/
+├── .github/                # Workflows, templates e governança
 ├── Assets/                 # Recursos visuais e de mídia educacional
 │   ├── Image/              # Imagens ilustrativas (CPU, RAM, Storage)
 │   ├── favicon/            # Conjunto completo de favicons multiplataforma
 │   └── media/              # Mídia geral (logo, ícones sociais)
+├── docs/                   # Documentação complementar
+├── tests/                  # Testes de smoke
+├── CHANGELOG.md            # Registro de mudanças
+├── CODE_OF_CONDUCT.md      # Código de conduta
+├── CONTRIBUTING.md         # Guia de contribuição
 ├── LICENSE                 # Arquivo de licença MIT
 ├── README.md               # Este arquivo de documentação
-├── Style.css               # Folha de estilo secundária/alternativa
-└── index.html              # Ponto de entrada principal com estrutura e estilos críticos
+├── SECURITY.md             # Política de segurança
+├── Style.css               # Folha de estilo principal
+├── index.html              # Ponto de entrada principal
+└── package.json            # Scripts de lint/format e testes
 ```
 
 **Detalhamento dos Arquivos:**
 
-- `index.html`: Arquivo principal contendo estrutura HTML semântica e CSS crítico embutido para performance otimizada
+- `index.html`: Arquivo principal contendo estrutura HTML semântica e conteúdo educacional
 - `Assets/Image/`: Imagens educacionais de alta qualidade para conceitos de hardware e software
 - `Assets/favicon/`: Conjunto completo de favicons para diferentes dispositivos e plataformas
-- `Style.css`: Estilos secundários ou versão modular para refatoração futura
+- `Style.css`: Estilos minimalistas e consistentes
+- `.github/`: CI, CodeQL, templates e dependabot
+- `tests/`: Teste de smoke simples para validar presença de seções críticas
 
 ## 📋 Pré-requisitos Avançados
 
 **Para Usuários:**
-- **Navegador Web Moderno:** Chrome, Firefox, Safari, Edge (suporte a HTML5, CSS3, backdrop-filter)
+- **Navegador Web Moderno:** Chrome, Firefox, Safari, Edge (suporte a HTML5 e CSS3)
 
-**Para Desenvolvimento:**
+**Para Desenvolvimento (opcional):**
 - **Git:** Sistema de controle de versão para clonar repositório
 - **Editor de Código:** VS Code, Sublime Text ou IDE similar
+- **Node.js 18+ (opcional):** Para rodar lint/format/testes locais
 - **Servidor Local (Opcional):** Para desenvolvimento com Live Reload
 
 Nenhuma dependência de runtime ou processo de compilação é necessário para executar o projeto.
@@ -202,6 +211,12 @@ start index.html
 
 3. **Servidor Local (Recomendado):**
 Para melhor experiência de desenvolvimento:
+4. **Lint e Testes (Opcional):**
+```bash
+npm install
+npm run lint
+npm test
+```
 
 ```bash
 # Com Python
@@ -255,7 +270,8 @@ Adicione novas seções educacionais seguindo a estrutura:
 **Qualidade Atual:**
 - Validação manual cross-browser para experiência educacional consistente
 - Testes de responsividade em múltiplos dispositivos
-- Verificação de acessibilidade para inclusão educacional
+- Teste de smoke automatizado para presença de seções essenciais
+- Lint e format via scripts de CI
 
 **Estratégia de Qualidade Proposta:**
 
@@ -272,9 +288,9 @@ Adicione novas seções educacionais seguindo a estrutura:
 **Plataforma:** Implantado na **Vercel** com otimização para conteúdo educacional estático.
 
 **Processo de CI/CD:**
-- Deploy automatizado via integração GitHub
-- Cada `git push` para branch `main` aciona novo deployment
-- Build atômico sem tempo de inatividade
+- GitHub Actions para lint, format e testes de smoke
+- CodeQL para análises de segurança
+- Deploy automatizado via integração GitHub (Vercel)
 
 **Escalabilidade Educacional:**
 - **Distribuição Global:** CDN da Vercel garante acesso rápido mundialmente
@@ -308,6 +324,8 @@ Para detalhes completos, consulte o arquivo [LICENSE](https://github.com/ESousa9
 
 - **GitHub:** [@ESousa97](https://github.com/ESousa97)
 - **LinkedIn:** [José Enoque Sousa](https://www.linkedin.com/in/enoque-sousa-bb89aa168/)
+- **Portfólio:** [enoquesousa.vercel.app](https://enoquesousa.vercel.app)
+- **Portfólio (dev):** [devportfolio-two-zeta.vercel.app](https://devportfolio-two-zeta.vercel.app/)
 - **Demo Online:** [alfa-tech-three.vercel.app](https://alfa-tech-three.vercel.app/)
 - **Issues:** Para bugs e sugestões, use [GitHub Issues](https://github.com/ESousa97/Alfa-Tech/issues)
 

@@ -1,0 +1,16 @@
+# A+ workflow
+BASELINE.md
+Relatório FINAL.md
+
+# Node
+node_modules/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+
+# Build
+/dist/
