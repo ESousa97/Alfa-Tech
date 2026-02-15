@@ -240,24 +240,28 @@ O projeto também é compatível com Netlify, GitHub Pages ou qualquer plataform
 <summary><strong>Por que não usar React ou Vue?</strong></summary>
 
 Para conteúdo educacional estático, frameworks adicionariam complexidade desnecessária e impactariam o tempo de carregamento sem oferecer benefícios significativos.
+
 </details>
 
 <details>
 <summary><strong>Posso reutilizar o design e conteúdo?</strong></summary>
 
 Sim. A licença MIT permite reutilização livre do código e conteúdo, inclusive para fins educacionais e comerciais, mantendo apenas o aviso de licença original.
+
 </details>
 
 <details>
 <summary><strong>Para que faixa etária o conteúdo é adequado?</strong></summary>
 
 O conteúdo foi desenvolvido para iniciantes de qualquer idade, com linguagem acessível mas tecnicamente precisa sobre fundamentos da computação.
+
 </details>
 
 <details>
 <summary><strong>Como contribuir com novos conceitos?</strong></summary>
 
 Abra uma Issue no GitHub com sua sugestão ou envie um Pull Request seguindo a estrutura de cards existente. Consulte `CONTRIBUTING.md` para detalhes.
+
 </details>
 
 ---
